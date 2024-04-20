@@ -9,10 +9,9 @@ export class CardDeck {
   cards: Card[] = [];
 
   constructor(partial: Partial<CardDeck> = {}) {
-    const { cards, ...rest } = partial
+    const { cards, ...rest } = partial;
 
-    if (cards)
-      this.cards = cards.map((card: Partial<Card>) => new Card(card));
+    if (cards) this.cards = cards.map((card: Partial<Card>) => new Card(card));
 
     Object.assign(this, rest);
   }

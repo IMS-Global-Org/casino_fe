@@ -10,7 +10,7 @@ const CardDeck = () => {
   return (
     <>
       List of Cards in the Deck
-      <Wrap width='20em' spacing='1em'>
+      <Wrap width="20em" spacing="1em">
         {cardDeck.cards.map((card) => (
           <WrapItem key={card.id}>
             <PlayingCard card={card} />

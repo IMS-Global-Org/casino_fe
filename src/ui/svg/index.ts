@@ -12,4 +12,4 @@ export const SuitSvg = {
   [Suit.HEART]: Heart,
   [Suit.DIAMOND]: Diamond,
   [Suit.NONE]: None,
-}
+};
